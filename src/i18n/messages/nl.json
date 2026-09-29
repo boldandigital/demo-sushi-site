@@ -1,25 +1,116 @@
 {
   "nav": {
     "home": "Home",
-    "about": "Over ons",
-    "contact": "Contact"
+    "menu": "Menu",
+    "story": "Verhaal",
+    "reserve": "Reserveren"
   },
   "home": {
-    "hero": "Demo hero komt hier",
-    "tagline": "Scroll-verhaal skelet — neutrale basis voor verticale demos."
+    "eyebrow": "Kaiseki · São Paulo",
+    "title": "Twaalf gangen stilte.",
+    "tagline": "Een kaiseki-omakase-reis door de Edomae-traditie, geserveerd aan de toonbank.",
+    "scrollHint": "Scroll om te beginnen"
   },
-  "about": {
-    "title": "Over ons",
-    "body": "Placeholder over-ons pagina. Fork dit skelet om een verticaal-specifiek verhaal te bouwen."
+  "menu": {
+    "eyebrow": "De Omakase",
+    "title": "De progressie van de chef.",
+    "intro": "Twaalf gangen, tweeëntwintig zitplaatsen, één service per avond. Het menu verschuift met het seizoen — elke nigiri met de hand geperst voor uw ogen.",
+    "courseIndex": "Gang",
+    "closing": "— einde van de service —",
+    "courses": {
+      "sakizuke": {
+        "name": "Sakizuke — Het welkom",
+        "description": "Een klein sake-kopje met één seizoensbietje. Vanavond: dashi-gelei, yuzozeste, en één sint-jacobsschelp uit Hokkaido.",
+        "ingredients": "Sint-jacobsschelp · dashi · yuzu"
+      },
+      "mukozuke": {
+        "name": "Mukozuke — De sashimi",
+        "description": "Drie sneetjes blauwvintonijn — akami, chu-toro, o-toro — op een met de hand gevormde ijsbowl, geserveerd met vers geraspte wasabi.",
+        "ingredients": "Blauwvintonijn · wasabi · kizami nori"
+      },
+      "wanmono": {
+        "name": "Wanmono — De soep",
+        "description": "Heldere dashi aan tafel gegoten over een gestoofde moot gindara en één shiitake. De bouillon heeft achtenveertig uur gerust.",
+        "ingredients": "Gindara · shiitake · ichiban dashi"
+      },
+      "hassun": {
+        "name": "Hassun — De acht happen",
+        "description": "Acht kleine bereidingen van het seizoen: gestoofde octopus, in miso gemarineerde komkommer, op zout gril ayu, en vijf andere — elke hap een zin in een gedicht.",
+        "ingredients": "Octopus · ayu · komkommer · vijf seizoensbeten"
+      },
+      "mizumono": {
+        "name": "Mizumono — De koude kom",
+        "description": "Cherrytomaatjes gemarineerd in rijstazijn, geserveerd op ijs met shiso en één druppel olijfolie aan de toonbank geperst.",
+        "ingredients": "Cherrytomaat · shiso · rijstazijn"
+      },
+      "nimono": {
+        "name": "Nimono — De gestoofde",
+        "description": "Vijf uur sudderen van wagyuwang, daikon en wortel in een soj-mirin-saus. Geserveerd in een met de hand gedraaide kom uit Kyoto.",
+        "ingredients": "Wagyuwang · daikon · wortel"
+      },
+      "yakimono": {
+        "name": "Yakimono — De gegrilde",
+        "description": "Met mentaiko gegrilde black cod op een cederblad, aan tafel bestreken met zoete soj. De vis komt heel aan en wordt aan tafel gefileerd.",
+        "ingredients": "Black cod · mentaiko · ceder"
+      },
+      "shiizakana": {
+        "name": "Shiizakana — De krachtpatser",
+        "description": "Een klein bordje unagi in tare-glazuur, geserveerd met sansho-peper en een kwarteleigeel die aan tafel wordt gebroken.",
+        "ingredients": "Unagi · sansho · kwartelei"
+      },
+      "sushi": {
+        "name": "Omae-sushi — De vijf stukken",
+        "description": "Vijf nigiri, aan de toonbank voor u geperst: kanpachi, hamachi, madai, botan-ebi en uni uit Hokkaido. Warme rijst, koele vis.",
+        "ingredients": "Kanpachi · hamachi · madai · botan-ebi · uni"
+      },
+      "takiawase": {
+        "name": "Takiawase — De tuin",
+        "description": "Seizoensgroenten kort geblancheerd en met sesam gekleed. Een kleine pauze tussen de vis en wat volgt.",
+        "ingredients": "Sugar snaps · chrysant · sesam"
+      },
+      "tomewan": {
+        "name": "Tomewan — De laatste soep",
+        "description": "Akadashi rode miso, geserveerd in een gelakte kom met een kleine rijstberg ernaast. De laatste warme gang voor het dessert.",
+        "ingredients": "Akadashi miso · rijst · bieslook"
+      },
+      "mizumochi": {
+        "name": "Mizumochi — De afsluiting",
+        "description": "Eén perzik-mochi op een met de hand geperste ijslepel, met hojicha aan tafel ingeschonken. De maaltijd eindigt in stilte.",
+        "ingredients": "Perzik-mochi · hojicha"
+      }
+    }
   },
-  "contact": {
-    "title": "Contact",
-    "body": "Placeholder contactpagina.",
-    "whatsapp": "Chat op WhatsApp"
+  "story": {
+    "eyebrow": "De chef",
+    "title": "Tweeëntwintig zitplaatsen. Eén toonbank.",
+    "p1": "Chef Aiko Tanaka trainde veertien jaar in Tokio voordat ze Kaiseki São Paulo opende in 2019. Ze betrekt vis dagelijks van de buitenmarkt van Tsukiji — 's nachts overgevlogen, dezelfde dag geserveerd.",
+    "p2": "Het restaurant telt tweeëntwintig zitplaatsen. Er is geen gedrukt menu. Elke gast krijgt dezelfde twaalfgangenprogressie, met één vervangoptie voor allergieën.",
+    "p3": "Tanaka-san werkt alleen aan de toonbank. Ze perst elke nigiri voor de gast. De zaal valt stil wanneer ze aan een gang begint. Gesprekken hernemen wanneer het bord wordt neergezet.",
+    "p4": "De wachtlijst is zes weken. Reserveringen gaan open op de eerste maandag van elke maand om 10:00 BRT. De telefoon wordt beantwoord in het Portugees, Engels of Japans.",
+    "signature": "— Tanaka Aiko, Itamae",
+    "signatureSub": "Tokio · São Paulo",
+    "ctaEyebrow": "Reserveren",
+    "ctaTitle": "De volgende service is op vrijdag.",
+    "ctaButton": "Reservering aanvragen"
+  },
+  "reserve": {
+    "eyebrow": "Reserveringen",
+    "title": "Via WhatsApp.",
+    "body": "Alle aanvragen worden binnen 24 uur beantwoord. Vermeld de gewenste datum, het aantal personen en eventuele dieetwensen.",
+    "cta": "Open WhatsApp",
+    "note": "Opent met een vooraf ingevuld bericht in uw taal.",
+    "message": "Hoi! Ik wil graag reserveren bij Kaiseki São Paulo — Kaiseki-omakase voor [N] personen op [DATUM]. Dank u!",
+    "hours": "Service",
+    "hoursValue": "Wo–Za · 19:30 & 21:30",
+    "address": "Adres",
+    "addressValue": "R. Bela Cintra, 1545 — São Paulo",
+    "seats": "Zitplaatsen",
+    "seatsValue": "22 zitplaatsen · alleen aan de toonbank"
   },
   "footer": {
-    "mark": "Bold & Digital",
-    "tagline": "Scroll-verhaal demos."
+    "mark": "Kaiseki São Paulo",
+    "tagline": "Een demonstratiesite van Bold & Digital.",
+    "credits": "Hero-video: Pixabay (Coverr-Free-Footage) · Chef-portret: Wikimedia Commons (DinkY2K, CC-BY-SA)"
   },
   "locale": {
     "switcher": "Taal",

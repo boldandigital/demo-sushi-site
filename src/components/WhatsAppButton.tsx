@@ -5,21 +5,20 @@ import { useTranslations } from "next-intl";
 type Props = {
   /** E.164 phone number, no `+` or spaces. e.g. "5511999999999" */
   phone?: string;
-  /** Optional pre-filled message */
-  message?: string;
 };
 
 /**
  * WhatsAppButton — floating sticky button, bottom-right.
  * Opens `https://wa.me/<phone>?text=<message>` in a new tab.
- * Phone defaults to a B&D placeholder so the skeleton is testable without
- * credentials — real demos will pass the actual venue phone.
+ * Message comes from the current locale's `reserve.message` so each
+ * language has its own pre-filled text.
+ *
+ * Phone defaults to B&D placeholder — replace per demo before launch.
  */
-export function WhatsAppButton({
-  phone = "5551999999999", // placeholder — Captain to replace per demo
-  message = "Hello",
-}: Props) {
-  const t = useTranslations("contact");
+export function WhatsAppButton({ phone = "5511999999999" }: Props) {
+  const t = useTranslations("reserve");
+  const message = t("message");
+  const label = t("cta");
   const href = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   return (
@@ -27,10 +26,9 @@ export function WhatsAppButton({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={t("whatsapp")}
-      className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-foreground text-background shadow-lg transition-transform hover:scale-105"
+      aria-label={label}
+      className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full border border-amber bg-amber text-background shadow-[0_0_30px_rgba(212,165,116,0.4)] transition-transform hover:scale-105 hover:bg-transparent hover:text-amber"
     >
-      {/* Inline WhatsApp glyph (simple SVG, no extra deps) */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"

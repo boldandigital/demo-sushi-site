@@ -1,25 +1,116 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About",
-    "contact": "Contact"
+    "menu": "Menu",
+    "story": "Story",
+    "reserve": "Reserve"
   },
   "home": {
-    "hero": "Demo hero goes here",
-    "tagline": "Scroll narrative skeleton — neutral base for vertical demos."
+    "eyebrow": "Kaiseki · São Paulo",
+    "title": "Twelve courses of silence.",
+    "tagline": "A kaiseki omakase journey through Edomae tradition, served at the counter.",
+    "scrollHint": "Scroll to begin"
   },
-  "about": {
-    "title": "About",
-    "body": "Placeholder about page. Fork this skeleton to build a vertical-specific story."
+  "menu": {
+    "eyebrow": "The Omakase",
+    "title": "Chef's progression.",
+    "intro": "Twelve courses, twenty-two seats, one nightly service. The menu evolves with the season — every nigiri pressed by hand in front of you.",
+    "courseIndex": "Course",
+    "closing": "— end of service —",
+    "courses": {
+      "sakizuke": {
+        "name": "Sakizuke — The Welcome",
+        "description": "A small sake cup cradling a single seasonal bite. Tonight: dashi jelly, yuzu zest, and a single Hokkaido scallop.",
+        "ingredients": "Hokkaido scallop · dashi · yuzu"
+      },
+      "mukozuke": {
+        "name": "Mukozuke — The Sashimi",
+        "description": "Three slices of bluefin tuna — akami, chu-toro, o-toro — arranged on a hand-formed ice bowl, served with freshly grated wasabi.",
+        "ingredients": "Bluefin tuna · wasabi · kizami nori"
+      },
+      "wanmono": {
+        "name": "Wanmono — The Soup",
+        "description": "Clear dashi poured at the table over a poached fillet of gindara and a single shiitake. The broth is forty-eight hours in the making.",
+        "ingredients": "Gindara · shiitake · ichiban dashi"
+      },
+      "hassun": {
+        "name": "Hassun — The Eight Bites",
+        "description": "Eight small preparations representing the season: simmered octopus, miso-pickled cucumber, salt-grilled ayu, and five more — each a sentence in a poem.",
+        "ingredients": "Octopus · ayu · cucumber · five seasonal bites"
+      },
+      "mizumono": {
+        "name": "Mizumono — The Cold Bowl",
+        "description": "Cherry tomatoes marinated in rice vinegar, served on ice with shiso and a single drop of olive oil pressed at the counter.",
+        "ingredients": "Cherry tomato · shiso · rice vinegar"
+      },
+      "nimono": {
+        "name": "Nimono — The Simmered",
+        "description": "A five-hour simmer of wagyu cheek, daikon, and carrot in a soy-mirin glaze. Served in a hand-thrown Kyoto bowl.",
+        "ingredients": "Wagyu cheek · daikon · carrot"
+      },
+      "yakimono": {
+        "name": "Yakimono — The Grilled",
+        "description": "Mentaiko-grilled black cod over a cedar leaf, brushed with sweet soy at the counter. The fish arrives whole, filleted tableside.",
+        "ingredients": "Black cod · mentaiko · cedar"
+      },
+      "shiizakana": {
+        "name": "Shiizakana — The Strong",
+        "description": "A small plate of unagi glazed in tare, served with sansho pepper and a quail egg yolk broken at the table.",
+        "ingredients": "Unagi · sansho · quail egg"
+      },
+      "sushi": {
+        "name": "Omae-sushi — The Five Pieces",
+        "description": "Five nigiri, pressed at the counter in front of you: kanpachi, hamachi, madai, botan-ebi, and uni from Hokkaido. Warm rice, cool fish.",
+        "ingredients": "Kanpachi · hamachi · madai · botan-ebi · uni"
+      },
+      "takiawase": {
+        "name": "Takiawase — The Garden",
+        "description": "Seasonal vegetables briefly blanched and dressed with sesame. A small pause between the fish and what comes next.",
+        "ingredients": "Snap peas · chrysanthemum · sesame"
+      },
+      "tomewan": {
+        "name": "Tomewan — The Last Soup",
+        "description": "Akadashi red miso, served in a lacquered bowl with a small mound of rice on the side. The final warm course before dessert.",
+        "ingredients": "Akadashi miso · rice · scallion"
+      },
+      "mizumochi": {
+        "name": "Mizumochi — The Conclusion",
+        "description": "A single peach mochi served on a hand-pressed ice spoon, with hojicha poured tableside. The meal ends in quiet.",
+        "ingredients": "Peach mochi · hojicha"
+      }
+    }
   },
-  "contact": {
-    "title": "Contact",
-    "body": "Placeholder contact page.",
-    "whatsapp": "Chat on WhatsApp"
+  "story": {
+    "eyebrow": "The Chef",
+    "title": "Twenty-two seats. One counter.",
+    "p1": "Chef Aiko Tanaka trained for fourteen years in Tokyo before opening Kaiseki São Paulo in 2019. She sources fish daily from the Tsukiji outer market — flown overnight, served the same day.",
+    "p2": "The restaurant seats twenty-two. There is no menu printed on paper. Each guest receives the same twelve-course progression, with one substitution offered for allergies.",
+    "p3": "Tanaka-san works the counter alone. She presses every nigiri in front of the guest. The room falls quiet when she begins a course. Conversations resume when the plate is set down.",
+    "p4": "The waitlist is six weeks. Reservations open on the first Monday of every month at 10:00 BRT. The phone is answered in Portuguese, English, or Japanese.",
+    "signature": "— Tanaka Aiko, Itamae",
+    "signatureSub": "Tokyo · São Paulo",
+    "ctaEyebrow": "Reserve",
+    "ctaTitle": "The next service is on Friday.",
+    "ctaButton": "Request a reservation"
+  },
+  "reserve": {
+    "eyebrow": "Reservations",
+    "title": "By WhatsApp.",
+    "body": "All requests are answered within 24 hours. Please include the requested date, party size, and any dietary restrictions.",
+    "cta": "Open WhatsApp",
+    "note": "Opens with a pre-filled message in your language.",
+    "message": "Hello! I would like to reserve at Kaiseki São Paulo — Kaiseki omakase for [N] guests on [DATE]. Thank you!",
+    "hours": "Service",
+    "hoursValue": "Wed–Sat · 19:30 & 21:30",
+    "address": "Address",
+    "addressValue": "R. Bela Cintra, 1545 — São Paulo",
+    "seats": "Seats",
+    "seatsValue": "22 seats · counter only"
   },
   "footer": {
-    "mark": "Bold & Digital",
-    "tagline": "Scroll narrative demos."
+    "mark": "Kaiseki São Paulo",
+    "tagline": "A demonstration site by Bold & Digital.",
+    "credits": "Hero video: Pixabay (Coverr-Free-Footage) · Chef portrait: Wikimedia Commons (DinkY2K, CC-BY-SA)"
   },
   "locale": {
     "switcher": "Language",

@@ -5,77 +5,59 @@
 @custom-variant dark (&:is(.dark *));
 
 /* ─────────────────────────────────────────────────────────────
-   Neutral palette tokens (locked per Captain's spec)
-   bg #FAFAFA · text #0A0A0A · borders #E5E5E5
-   Dark mode toggled via [data-theme="dark"] OR class="dark" on <html>
+   Kaiseki São Paulo — Dark warm brand palette (locked per spec)
+   bg #0A0A0A · cream text #F5E6D3 · amber #D4A574 · copper #8B4513
+   Dark is the default for this vertical — no light mode toggle.
    ───────────────────────────────────────────────────────────── */
 :root {
-  /* Override shadcn defaults with Captain's hex-locked values */
-  --background: #FAFAFA;
-  --foreground: #0A0A0A;
-  --border: #E5E5E5;
-  --muted: #F5F5F5;
-  --surface: #FFFFFF;
-  --accent: #0A0A0A;
-  --muted-foreground: #737373;
+  /* Brand */
+  --background: #0A0A0A;
+  --foreground: #F5E6D3;
+  --border: #2A1A10;
+  --muted: #1A100A;
+  --surface: #14090A;
+  --accent: #D4A574;
+  --muted-foreground: #B89F86;
 
-  /* shadcn-required tokens — kept aligned with our palette */
-  --card: #FFFFFF;
-  --card-foreground: #0A0A0A;
-  --popover: #FFFFFF;
-  --popover-foreground: #0A0A0A;
-  --primary: #0A0A0A;
-  --primary-foreground: #FAFAFA;
-  --secondary: #F5F5F5;
-  --secondary-foreground: #0A0A0A;
-  --accent-foreground: #FAFAFA;
-  --destructive: oklch(0.577 0.245 27.325);
-  --input: #E5E5E5;
-  --ring: #0A0A0A;
-  --radius: 0.625rem;
-  --sidebar: #FFFFFF;
-  --sidebar-foreground: #0A0A0A;
-  --sidebar-primary: #0A0A0A;
-  --sidebar-primary-foreground: #FAFAFA;
-  --sidebar-accent: #F5F5F5;
-  --sidebar-accent-foreground: #0A0A0A;
-  --sidebar-border: #E5E5E5;
-  --sidebar-ring: #0A0A0A;
-  --chart-1: #E5E5E5;
-  --chart-2: #A3A3A3;
-  --chart-3: #525252;
-  --chart-4: #404040;
-  --chart-5: #171717;
+  /* shadcn-required tokens — aligned with our dark-warm palette */
+  --card: #14090A;
+  --card-foreground: #F5E6D3;
+  --popover: #14090A;
+  --popover-foreground: #F5E6D3;
+  --primary: #D4A574;
+  --primary-foreground: #0A0A0A;
+  --secondary: #1F1208;
+  --secondary-foreground: #F5E6D3;
+  --accent-foreground: #0A0A0A;
+  --destructive: #8B4513;
+  --input: #2A1A10;
+  --ring: #D4A574;
+  --radius: 0.5rem;
+  --sidebar: #14090A;
+  --sidebar-foreground: #F5E6D3;
+  --sidebar-primary: #D4A574;
+  --sidebar-primary-foreground: #0A0A0A;
+  --sidebar-accent: #1F1208;
+  --sidebar-accent-foreground: #F5E6D3;
+  --sidebar-border: #2A1A10;
+  --sidebar-ring: #D4A574;
+  --chart-1: #D4A574;
+  --chart-2: #8B4513;
+  --chart-3: #B89F86;
+  --chart-4: #F5E6D3;
+  --chart-5: #2A1A10;
+
+  /* Brand extras */
+  --copper: #8B4513;
+  --cream: #F5E6D3;
+  --amber: #D4A574;
 }
 
-/* Captain's specified dark-mode toggle (CSS-variable scheme) */
-:root[data-theme="dark"] {
+/* No light mode — dark warm is the entire brand. Lock to dark. */
+:root[data-theme="light"],
+:root:not([data-theme="dark"]):not(.dark) {
   --background: #0A0A0A;
-  --foreground: #FAFAFA;
-  --border: #262626;
-  --muted: #171717;
-  --surface: #171717;
-  --accent: #FAFAFA;
-  --muted-foreground: #A3A3A3;
-  --card: #171717;
-  --card-foreground: #FAFAFA;
-  --popover: #171717;
-  --popover-foreground: #FAFAFA;
-  --primary: #FAFAFA;
-  --primary-foreground: #0A0A0A;
-  --secondary: #262626;
-  --secondary-foreground: #FAFAFA;
-  --accent-foreground: #0A0A0A;
-  --input: #262626;
-  --ring: #FAFAFA;
-  --sidebar: #171717;
-  --sidebar-foreground: #FAFAFA;
-  --sidebar-primary: #FAFAFA;
-  --sidebar-primary-foreground: #0A0A0A;
-  --sidebar-accent: #262626;
-  --sidebar-accent-foreground: #FAFAFA;
-  --sidebar-border: #262626;
-  --sidebar-ring: #FAFAFA;
+  --foreground: #F5E6D3;
 }
 
 @theme inline {
@@ -85,7 +67,11 @@
   --color-muted: var(--muted);
   --color-surface: var(--surface);
   --color-accent: var(--accent);
+  --color-copper: var(--copper);
+  --color-cream: var(--cream);
+  --color-amber: var(--amber);
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-cormorant), ui-serif, Georgia, serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -130,6 +116,13 @@ body {
 body {
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  /* Lock dark theme — set data-theme on html so the cascade resolves to brand dark */
+}
+
+/* Headings + display copy use Cormorant Garamond */
+h1, h2, h3, .font-display {
+  font-family: var(--font-cormorant), ui-serif, Georgia, serif;
+  letter-spacing: -0.01em;
 }
 
 /* Reset default link colors to inherit so they match body */
@@ -138,10 +131,13 @@ a {
   text-decoration: none;
 }
 
-/* Respect reduced motion — disable Lenis smooth scroll */
+/* Respect reduced motion — disable Lenis smooth scroll + scrub */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+  .sushi-hero-canvas {
+    display: none !important;
   }
 }
 
@@ -154,5 +150,7 @@ a {
   }
   html {
     @apply font-sans;
+    background: var(--background);
+    color-scheme: dark;
   }
 }

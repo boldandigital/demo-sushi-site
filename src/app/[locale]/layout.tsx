@@ -24,9 +24,17 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "home" });
+  const tf = await getTranslations({ locale, namespace: "footer" });
   return {
-    title: "scroll-shared",
+    title: `${t("title")} · Kaiseki São Paulo`,
     description: t("tagline"),
+    openGraph: {
+      title: "Kaiseki São Paulo",
+      description: t("tagline"),
+      siteName: tf("mark"),
+      locale,
+      type: "website",
+    },
   };
 }
 
@@ -37,9 +45,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     notFound();
   }
 
-  // Enable static rendering for this segment
   setRequestLocale(locale);
-
   const messages = await getMessages();
 
   return (

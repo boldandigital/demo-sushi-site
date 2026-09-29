@@ -1,25 +1,116 @@
 {
   "nav": {
     "home": "Início",
-    "about": "Sobre",
-    "contact": "Contato"
+    "menu": "Menu",
+    "story": "História",
+    "reserve": "Reservar"
   },
   "home": {
-    "hero": "Demo hero aqui",
-    "tagline": "Esqueleto de narrativa de scroll — base neutra para demos verticais."
+    "eyebrow": "Kaiseki · São Paulo",
+    "title": "Doze pratos de silêncio.",
+    "tagline": "Uma jornada kaiseki omakase pela tradição Edomae, servida no balcão.",
+    "scrollHint": "Role para começar"
   },
-  "about": {
-    "title": "Sobre",
-    "body": "Página sobre provisória. Faça fork deste esqueleto para construir uma história vertical específica."
+  "menu": {
+    "eyebrow": "O Omakase",
+    "title": "A progressão do chef.",
+    "intro": "Doze pratos, vinte e dois lugares, um serviço por noite. O menu muda com a estação — cada nigiri prensada à mão diante de você.",
+    "courseIndex": "Prato",
+    "closing": "— fim do serviço —",
+    "courses": {
+      "sakizuke": {
+        "name": "Sakizuke — A Boas-vindas",
+        "description": "Uma pequena xícara de sake com uma única mordida da estação. Hoje: gelatina de dashi, raspas de yuzu e uma vieira de Hokkaido.",
+        "ingredients": "Vieira de Hokkaido · dashi · yuzu"
+      },
+      "mukozuke": {
+        "name": "Mukozuke — O Sashimi",
+        "description": "Três fatias de atum bluefin — akami, chu-toro, o-toro — dispostas numa tigela de gelo moldada à mão, servidas com wasabi ralado na hora.",
+        "ingredients": "Atum bluefin · wasabi · kizami nori"
+      },
+      "wanmono": {
+        "name": "Wanmono — A Sopa",
+        "description": "Dashi claro despejado na mesa sobre um filé de gindara pochê e um único shiitake. O caldo leva quarenta e oito horas para ficar pronto.",
+        "ingredients": "Gindara · shiitake · ichiban dashi"
+      },
+      "hassun": {
+        "name": "Hassun — As Oito Mordidas",
+        "description": "Oito pequenas preparações da estação: polvo cozido, pepino marinado em missô, ayu grelhado no sal e mais cinco — cada uma um verso de um poema.",
+        "ingredients": "Polvo · ayu · pepino · cinco mordidas da estação"
+      },
+      "mizumono": {
+        "name": "Mizumono — A Tigela Fria",
+        "description": "Tomatinhos cereja marinados em vinagre de arroz, servidos no gelo com shiso e uma gota de azeite prensada no balcão.",
+        "ingredients": "Tomate cereja · shiso · vinagre de arroz"
+      },
+      "nimono": {
+        "name": "Nimono — O Cozido",
+        "description": "Cinco horas de cozimento lento da bochecha de wagyu, daikon e cenoura num glaze de shoyu-mirin. Servido numa tigela de Kyoto feita à mão.",
+        "ingredients": "Bochecha de wagyu · daikon · cenoura"
+      },
+      "yakimono": {
+        "name": "Yakimono — O Grelhado",
+        "description": "Black cod grelhado com mentaiko sobre folha de cedro, pincelado com shoyu doce no balcão. O peixe chega inteiro e é filetado à mesa.",
+        "ingredients": "Black cod · mentaiko · cedro"
+      },
+      "shiizakana": {
+        "name": "Shiizakana — O Intenso",
+        "description": "Um pequeno prato de unagi glaceado em tare, servido com pimenta sansho e uma gema de ovo de codorna quebrada à mesa.",
+        "ingredients": "Unagi · sansho · ovo de codorna"
+      },
+      "sushi": {
+        "name": "Omae-sushi — As Cinco Peças",
+        "description": "Cinco nigiri prensadas no balcão diante de você: kanpachi, hamachi, madai, botan-ebi e uni de Hokkaido. Arroz morno, peixe fresco.",
+        "ingredients": "Kanpachi · hamachi · madai · botan-ebi · uni"
+      },
+      "takiawase": {
+        "name": "Takiawase — O Jardim",
+        "description": "Vegetais da estação brevemente branqueados e temperados com gergelim. Uma pequena pausa entre o peixe e o que vem a seguir.",
+        "ingredients": "Ervilha-torta · crisântemo · gergelim"
+      },
+      "tomewan": {
+        "name": "Tomewan — A Última Sopa",
+        "description": "Missô vermelho akadashi, servido numa tigela laqueada com uma pequena porção de arroz ao lado. O último prato quente antes da sobremesa.",
+        "ingredients": "Missô akadashi · arroz · cebolinha"
+      },
+      "mizumochi": {
+        "name": "Mizumochi — O Encerramento",
+        "description": "Um único mochi de pêssego servido numa colher de gelo prensada à mão, com hojicha despejada à mesa. A refeição termina em silêncio.",
+        "ingredients": "Mochi de pêssego · hojicha"
+      }
+    }
   },
-  "contact": {
-    "title": "Contato",
-    "body": "Página de contato provisória.",
-    "whatsapp": "Conversar no WhatsApp"
+  "story": {
+    "eyebrow": "O Chef",
+    "title": "Vinte e dois lugares. Um balcão.",
+    "p1": "A chef Aiko Tanaka treinou quatorze anos em Tóquio antes de abrir o Kaiseki São Paulo em 2019. Ela compra peixe diariamente no mercado externo de Tsukiji — transportado de madrugada, servido no mesmo dia.",
+    "p2": "O restaurante tem vinte e dois lugares. Não há menu impresso. Cada convidado recebe a mesma progressão de doze pratos, com uma substituição oferecida para alergias.",
+    "p3": "Tanaka-san trabalha sozinha no balcão. Ela prenssa cada nigiri diante do convidado. A sala fica em silêncio quando ela inicia um prato. As conversas recomeçam quando o prato é pousado.",
+    "p4": "A lista de espera é de seis semanas. As reservas abrem na primeira segunda-feira de cada mês às 10:00 BRT. O telefone é atendido em português, inglês ou japonês.",
+    "signature": "— Tanaka Aiko, Itamae",
+    "signatureSub": "Tóquio · São Paulo",
+    "ctaEyebrow": "Reservar",
+    "ctaTitle": "O próximo serviço é na sexta-feira.",
+    "ctaButton": "Solicitar uma reserva"
+  },
+  "reserve": {
+    "eyebrow": "Reservas",
+    "title": "Pelo WhatsApp.",
+    "body": "Todos os pedidos são respondidos em até 24 horas. Por favor inclua a data desejada, o número de pessoas e quaisquer restrições alimentares.",
+    "cta": "Abrir WhatsApp",
+    "note": "Abre com uma mensagem pré-preenchida no seu idioma.",
+    "message": "Olá! Gostaria de reservar no Kaiseki São Paulo — omakase kaiseki para [N] pessoas em [DATA]. Obrigado!",
+    "hours": "Serviço",
+    "hoursValue": "Qua–Sáb · 19h30 & 21h30",
+    "address": "Endereço",
+    "addressValue": "R. Bela Cintra, 1545 — São Paulo",
+    "seats": "Lugares",
+    "seatsValue": "22 lugares · somente balcão"
   },
   "footer": {
-    "mark": "Bold & Digital",
-    "tagline": "Demos de narrativa de scroll."
+    "mark": "Kaiseki São Paulo",
+    "tagline": "Site de demonstração da Bold & Digital.",
+    "credits": "Vídeo do hero: Pixabay (Coverr-Free-Footage) · Retrato do chef: Wikimedia Commons (DinkY2K, CC-BY-SA)"
   },
   "locale": {
     "switcher": "Idioma",

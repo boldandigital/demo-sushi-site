@@ -4,7 +4,6 @@ import { useTranslations } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { useState, useTransition } from "react";
-import { DarkModeToggle } from "./DarkModeToggle";
 
 /**
  * Nav — minimal top nav. Left: B&D mark. Center: route links.
@@ -33,40 +32,45 @@ export function Nav() {
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link
           href="/"
-          className="text-sm font-semibold tracking-tight text-foreground"
+          className="font-display text-base tracking-tight text-cream"
         >
-          B&amp;D
+          Kaiseki São Paulo
         </Link>
 
         <nav className="hidden items-center gap-6 sm:flex">
           <Link
             href="/"
-            className="text-sm text-muted transition-colors hover:text-foreground"
+            className="font-display text-sm text-cream/80 transition-colors hover:text-amber"
           >
             {t("home")}
           </Link>
           <Link
-            href="/about"
-            className="text-sm text-muted transition-colors hover:text-foreground"
+            href="/menu"
+            className="font-display text-sm text-cream/80 transition-colors hover:text-amber"
           >
-            {t("about")}
+            {t("menu")}
           </Link>
           <Link
-            href="/contact"
-            className="text-sm text-muted transition-colors hover:text-foreground"
+            href="/story"
+            className="font-display text-sm text-cream/80 transition-colors hover:text-amber"
           >
-            {t("contact")}
+            {t("story")}
+          </Link>
+          <Link
+            href="/reserve"
+            className="font-display text-sm text-cream/80 transition-colors hover:text-amber"
+          >
+            {t("reserve")}
           </Link>
         </nav>
 
         <div className="flex items-center gap-3">
-          <DarkModeToggle />
           <div className="relative">
             <button
               type="button"
               aria-label={tl("switcher")}
               onClick={() => setOpen((o) => !o)}
-              className="flex items-center gap-1 rounded-md border border-border px-2 py-1 text-xs text-muted transition-colors hover:text-foreground"
+              className="flex items-center gap-1 rounded-md border border-border px-2 py-1 text-xs text-cream/70 transition-colors hover:text-amber"
             >
               <span aria-hidden>🌐</span>
               <span className="uppercase">{(pathname.split("/")[1] || "en")}</span>
@@ -82,10 +86,10 @@ export function Nav() {
                     <button
                       type="button"
                       onClick={() => switchLocale(loc)}
-                      className="flex w-full items-center justify-between px-3 py-2 text-left text-sm text-foreground hover:bg-border/30"
+                      className="flex w-full items-center justify-between px-3 py-2 text-left text-sm text-cream hover:bg-muted"
                     >
                       <span>{tl(loc)}</span>
-                      <span className="text-xs uppercase text-muted">{loc}</span>
+                      <span className="text-xs uppercase text-cream/60">{loc}</span>
                     </button>
                   </li>
                 ))}
